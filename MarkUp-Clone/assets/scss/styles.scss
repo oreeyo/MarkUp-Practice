@@ -1,5 +1,7 @@
 @import "./abstracts/variables_color";
 @import "./abstracts/variables";
 
-@import "./base/reset";
+@import "./base/reset";  // import 할 때 각 임포트 할 파일들 순서 지켜야함. 특히 길이, 색깔 변수들 
 @import "./base/preset";
+
+@import "./components/order_type";

@@ -1,0 +1,68 @@
+.dimmed-layer {  /* 팝업 뜰 때 전체적인 까만화면 적용*/ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom : 0;
+    background-color: rgba(#000, 0.8);
+    z-index: 9999;
+}
+
+.order-type-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 32px 0 40px; // 위 양쪽 아래
+    background-color: #fff;
+    border-radius: 16px 16px 0 0;  // 윗부분의 왼쪽 오른쪽 먹힘
+    text-align: center;
+    z-index: 10000;
+
+    .title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $booking-color-text1;
+    }
+
+    .type-list {
+        display: flex;
+        margin-top: 32px;
+
+    }
+
+    .type-item {
+        flex: 1;  // flex 속성으로 아이템이 가지는 구역을 1:1 비율로 나누어줌
+        & + .type-item{  //아이템이 그 다음에 올때마다 border-left를 적용하겠다는 뜻
+            border-left: 1px solid $booking-color-border103;
+        }
+    }
+
+    .icon {
+        width: 100px;
+        height: auto;
+        color: $booking-color-bg118;
+    }
+
+    .desc{  
+        margin-top: 8px;
+        font-size: 15px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: $booking-color-text1;
+    }
+
+    .btn-selection {
+        display: inline-block;
+        margin-top: 10px;  
+        // 처음에 display : inline-block를 줬을때는 해당 마진 탑이 안먹혔는데, 
+        // display를 적용하니 먹힘.  그 이유는 btn-selection이 span이라 inline 속성이였기 때문이다.
+
+        padding: 6px 18px;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 28px;
+        background-color: $booking-color-bg189;
+        color: #fff;
+    }
+}
