@@ -1,0 +1,14 @@
+
+// _preset.scss 에 선언 돼있음.  @mixin으로도 사용할 수 있다는걸 보여주기위한 예제임
+
+// @mixin scroll-x {
+//     overflow-x: auto;
+//     overflow-y: hidden;
+//     white-space: nowrap;
+//     -webkit-overflow-scrolling: touch; 
+//     -ms-overflow-style: none;
+//     scrollbar-width: none;
+//     &::-webkit-scrollbar {
+//         display: none;
+//     }
+// }
