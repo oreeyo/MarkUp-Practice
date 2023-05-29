@@ -1,0 +1,10 @@
+.container{
+    padding-top: $place-header-height + $place-tab-height;  
+    // header 높이 계산해서 넣어주는거임.
+    // 이렇게 패딩 안주면 헤더에 가려저서 컨텐트 안보임   
+}
+
+.common-inner {
+    margin: 0 auto;
+    max-width: 720px;  // 720 까지만 common-inner 스타일이 적용됨
+}
