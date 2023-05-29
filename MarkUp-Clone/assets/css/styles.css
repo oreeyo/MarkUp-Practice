@@ -273,15 +273,6 @@ textarea::-webkit-outer-spin-button {
   line-height: 46px;
 }
 
-.container {
-  padding-top: 94px;
-}
-
-.common-inner {
-  margin: 0 auto;
-  max-width: 720px;
-}
-
 .order-info-area {
   padding: 10px 18px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
@@ -367,4 +358,41 @@ textarea::-webkit-outer-spin-button {
 }
 .info-main-notice .ico-clock {
   margin-right: 6px;
+}
+
+.recent-order-area {
+  display: flex;
+  margin-top: 16px;
+  padding: 18px 0;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.recent-order-area .recent-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 8px;
+  border-right: 1px solid #f2f2f2;
+  line-height: 1.42;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+}
+.recent-order-area .recent-title .ico-clock {
+  margin-bottom: 4px;
+  width: 14px;
+}
+.recent-order-area .recent-menu-list {
+  display: flex;
+}
+
+.container {
+  padding-top: 94px;
+}
+
+.common-inner {
+  margin: 0 auto;
+  max-width: 720px;
 }
