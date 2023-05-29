@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        height: $place-header-height;
         
         .title{
             display: flex;
@@ -28,6 +28,49 @@
             font-size: 15px;
             font-weight: 700;
             padding-right: $m-padding;  // 주문내역에 오른쪽에만 패딩 주기로함
+        }
+    }
+
+    .place-tab {
+        display: flex;
+        background-color: #03b753;
+        height: $place-tab-height;
+
+        .tab-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8px;
+            width: 100%;
+
+            .tab {
+                flex : 1;
+                padding: 0 12px;  // 최소 여백을 잡아주는 것임.
+                font-size: 16px;
+                text-align: center;
+                opacity: 0.7;
+                
+                &.is-active {
+                    font-weight: 700;
+                    opacity: 1;
+
+                    .txt::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 2px;
+                        background-color: #fff;
+                    }
+                }
+
+                .txt {
+                    position: relative;
+                    display: inline-block;
+                    line-height: $place-tab-height;
+                }
+            }
         }
     }
 }
